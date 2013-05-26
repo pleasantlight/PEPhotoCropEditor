@@ -1,13 +1,13 @@
 //
 //  ViewController.m
-//  PEPhotoCropEditor
+//  PLPhotoCropEditor
 //
-//  Created by kishikawa katsumi on 2013/05/22.
-//  Copyright (c) 2013 kishikawa katsumi. All rights reserved.
+//  Created by Noam Etzion-Rosenberg on 2013/05/22.
+//  Copyright (c) 2013 Noam Etzion-Rosenberg. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "PECropViewController.h"
+#import "PLCropViewController.h"
 
 @interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 
@@ -47,13 +47,13 @@
 
 #pragma mark -
 
-- (void)cropViewController:(PECropViewController *)controller didFinishCroppingImage:(UIImage *)croppedImage
+- (void)cropViewController:(PLCropViewController *)controller didFinishCroppingImage:(UIImage *)croppedImage
 {
     [controller dismissViewControllerAnimated:YES completion:NULL];
     self.imageView.image = croppedImage;
 }
 
-- (void)cropViewControllerDidCancel:(PECropViewController *)controller
+- (void)cropViewControllerDidCancel:(PLCropViewController *)controller
 {
     [controller dismissViewControllerAnimated:YES completion:NULL];
 }
@@ -62,7 +62,7 @@
 
 - (IBAction)openEditor:(id)sender
 {
-    PECropViewController *controller = [[PECropViewController alloc] init];
+    PLCropViewController *controller = [[PLCropViewController alloc] init];
     controller.delegate = self;
     controller.image = self.imageView.image;
     

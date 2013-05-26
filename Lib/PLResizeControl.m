@@ -1,21 +1,21 @@
 //
-//  PEResizeControl.m
+//  PLResizeControl.m
 //  PhotoCropEditor
 //
-//  Created by kishikawa katsumi on 2013/05/19.
-//  Copyright (c) 2013 kishikawa katsumi. All rights reserved.
+//  Created by Noam Etzion-Rosenberg on 2013/05/19.
+//  Copyright (c) 2013 Noam Etzion-Rosenberg. All rights reserved.
 //
 
-#import "PEResizeControl.h"
+#import "PLResizeControl.h"
 
-@interface PEResizeControl ()
+@interface PLResizeControl ()
 
 @property (nonatomic, readwrite) CGPoint translation;
 @property (nonatomic) CGPoint startPoint;
 
 @end
 
-@implementation PEResizeControl
+@implementation PLResizeControl
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -23,8 +23,8 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         
-        UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
-        [self addGestureRecognizer:gestureRecognizer];
+//        UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+//        [self addGestureRecognizer:gestureRecognizer];
     }
     
     return self;

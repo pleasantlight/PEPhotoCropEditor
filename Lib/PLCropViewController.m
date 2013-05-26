@@ -1,21 +1,21 @@
 //
-//  PECropViewController.m
+//  PLCropViewController.m
 //  PhotoCropEditor
 //
-//  Created by kishikawa katsumi on 2013/05/19.
-//  Copyright (c) 2013 kishikawa katsumi. All rights reserved.
+//  Created by Noam Etzion-Rosenberg on 2013/05/19.
+//  Copyright (c) 2013 Noam Etzion-Rosenberg. All rights reserved.
 //
 
-#import "PECropViewController.h"
-#import "PECropView.h"
+#import "PLCropViewController.h"
+#import "PLCropView.h"
 
-@interface PECropViewController ()
+@interface PLCropViewController ()
 
-@property (nonatomic) PECropView *cropView;
+@property (nonatomic) PLCropView *cropView;
 
 @end
 
-@implementation PECropViewController
+@implementation PLCropViewController
 
 - (void)loadView
 {
@@ -24,7 +24,7 @@
     contentView.backgroundColor = [UIColor blackColor];
     self.view = contentView;
     
-    self.cropView = [[PECropView alloc] initWithFrame:contentView.bounds];
+    self.cropView = [[PLCropView alloc] initWithFrame:contentView.bounds];
     [contentView addSubview:self.cropView];
 }
 

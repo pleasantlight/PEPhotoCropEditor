@@ -21,44 +21,44 @@
 		14BB4EE7174BD70200C75F78 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14BB4EE5174BD70200C75F78 /* InfoPlist.strings */; };
 		14BB4EEC174BD70E00C75F78 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB4EE8174BD70E00C75F78 /* MainStoryboard_iPad.storyboard */; };
 		14BB4EED174BD70E00C75F78 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB4EEA174BD70E00C75F78 /* MainStoryboard_iPhone.storyboard */; };
-		14BB4F09174BD79E00C75F78 /* PECropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB4F08174BD79E00C75F78 /* PECropView.m */; };
-		14BB4F0C174BD7B100C75F78 /* PECropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB4F0B174BD7B100C75F78 /* PECropViewController.m */; };
-		14BB4F11174BD7CC00C75F78 /* PECropRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB4F0E174BD7CA00C75F78 /* PECropRectView.m */; };
-		14BB4F12174BD7CC00C75F78 /* PEResizeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB4F10174BD7CB00C75F78 /* PEResizeControl.m */; };
-		14BB4F15174BDED300C75F78 /* PEPhotoCropEditorBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BB4F13174BDED300C75F78 /* PEPhotoCropEditorBorder.png */; };
-		14BB4F16174BDED300C75F78 /* PEPhotoCropEditorBorder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BB4F14174BDED300C75F78 /* PEPhotoCropEditorBorder@2x.png */; };
+		14BB4F09174BD79E00C75F78 /* PLCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB4F08174BD79E00C75F78 /* PLCropView.m */; };
+		14BB4F0C174BD7B100C75F78 /* PLCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB4F0B174BD7B100C75F78 /* PLCropViewController.m */; };
+		14BB4F11174BD7CC00C75F78 /* PLCropRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB4F0E174BD7CA00C75F78 /* PLCropRectView.m */; };
+		14BB4F12174BD7CC00C75F78 /* PLResizeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BB4F10174BD7CB00C75F78 /* PLResizeControl.m */; };
+		14BB4F15174BDED300C75F78 /* PLPhotoCropEditorBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BB4F13174BDED300C75F78 /* PLPhotoCropEditorBorder.png */; };
+		14BB4F16174BDED300C75F78 /* PLPhotoCropEditorBorder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14BB4F14174BDED300C75F78 /* PLPhotoCropEditorBorder@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14BB4E86174BC39000C75F78 /* PEPhotoCropEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PEPhotoCropEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BB4E86174BC39000C75F78 /* PLPhotoCropEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLPhotoCropEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BB4E89174BC39000C75F78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		14BB4E8B174BC39000C75F78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14BB4E8D174BC39000C75F78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		14BB4EC6174BC57700C75F78 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "DemoApp/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
-		14BB4EC7174BC57700C75F78 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "DemoApp/Default.png"; sourceTree = SOURCE_ROOT; };
+		14BB4EC7174BC57700C75F78 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = DemoApp/Default.png; sourceTree = SOURCE_ROOT; };
 		14BB4EC8174BC57700C75F78 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "DemoApp/Default@2x.png"; sourceTree = SOURCE_ROOT; };
-		14BB4ECD174BC59500C75F78 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "DemoApp/main.m"; sourceTree = SOURCE_ROOT; };
-		14BB4ECF174BC59E00C75F78 /* PEPhotoCropEditor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PEPhotoCropEditor-Info.plist"; path = "DemoApp/PEPhotoCropEditor-Info.plist"; sourceTree = SOURCE_ROOT; };
-		14BB4EDA174BC5D300C75F78 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "DemoApp/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
-		14BB4EDB174BC5D300C75F78 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "DemoApp/AppDelegate.m"; sourceTree = SOURCE_ROOT; };
-		14BB4EDC174BC5D300C75F78 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "DemoApp/ViewController.h"; sourceTree = SOURCE_ROOT; };
-		14BB4EDD174BC5D300C75F78 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "DemoApp/ViewController.m"; sourceTree = SOURCE_ROOT; };
+		14BB4ECD174BC59500C75F78 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DemoApp/main.m; sourceTree = SOURCE_ROOT; };
+		14BB4EDA174BC5D300C75F78 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DemoApp/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		14BB4EDB174BC5D300C75F78 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DemoApp/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		14BB4EDC174BC5D300C75F78 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = DemoApp/ViewController.h; sourceTree = SOURCE_ROOT; };
+		14BB4EDD174BC5D300C75F78 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = DemoApp/ViewController.m; sourceTree = SOURCE_ROOT; };
 		14BB4EE0174BC68700C75F78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		14BB4EE2174BC68C00C75F78 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		14BB4EE4174BD6E600C75F78 /* PEPhotoCropEditor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PEPhotoCropEditor-Prefix.pch"; path = "DemoApp/PEPhotoCropEditor-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		14BB4EE6174BD70200C75F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "DemoApp/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
-		14BB4EE9174BD70E00C75F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "DemoApp/en.lproj/MainStoryboard_iPad.storyboard"; sourceTree = SOURCE_ROOT; };
-		14BB4EEB174BD70E00C75F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "DemoApp/en.lproj/MainStoryboard_iPhone.storyboard"; sourceTree = SOURCE_ROOT; };
-		14BB4F07174BD79E00C75F78 /* PECropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PECropView.h; path = Lib/PECropView.h; sourceTree = SOURCE_ROOT; };
-		14BB4F08174BD79E00C75F78 /* PECropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PECropView.m; path = Lib/PECropView.m; sourceTree = SOURCE_ROOT; };
-		14BB4F0A174BD7B100C75F78 /* PECropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PECropViewController.h; path = Lib/PECropViewController.h; sourceTree = SOURCE_ROOT; };
-		14BB4F0B174BD7B100C75F78 /* PECropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PECropViewController.m; path = Lib/PECropViewController.m; sourceTree = SOURCE_ROOT; };
-		14BB4F0D174BD7CA00C75F78 /* PECropRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PECropRectView.h; path = Lib/PECropRectView.h; sourceTree = SOURCE_ROOT; };
-		14BB4F0E174BD7CA00C75F78 /* PECropRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PECropRectView.m; path = Lib/PECropRectView.m; sourceTree = SOURCE_ROOT; };
-		14BB4F0F174BD7CB00C75F78 /* PEResizeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PEResizeControl.h; path = Lib/PEResizeControl.h; sourceTree = SOURCE_ROOT; };
-		14BB4F10174BD7CB00C75F78 /* PEResizeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PEResizeControl.m; path = Lib/PEResizeControl.m; sourceTree = SOURCE_ROOT; };
-		14BB4F13174BDED300C75F78 /* PEPhotoCropEditorBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PEPhotoCropEditorBorder.png; path = Resources/PEPhotoCropEditorBorder.png; sourceTree = SOURCE_ROOT; };
-		14BB4F14174BDED300C75F78 /* PEPhotoCropEditorBorder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PEPhotoCropEditorBorder@2x.png"; path = "Resources/PEPhotoCropEditorBorder@2x.png"; sourceTree = SOURCE_ROOT; };
+		14BB4EE6174BD70200C75F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = DemoApp/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		14BB4EE9174BD70E00C75F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = DemoApp/en.lproj/MainStoryboard_iPad.storyboard; sourceTree = SOURCE_ROOT; };
+		14BB4EEB174BD70E00C75F78 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = DemoApp/en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
+		14BB4F07174BD79E00C75F78 /* PLCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCropView.h; path = Lib/PLCropView.h; sourceTree = SOURCE_ROOT; };
+		14BB4F08174BD79E00C75F78 /* PLCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLCropView.m; path = Lib/PLCropView.m; sourceTree = SOURCE_ROOT; };
+		14BB4F0A174BD7B100C75F78 /* PLCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCropViewController.h; path = Lib/PLCropViewController.h; sourceTree = SOURCE_ROOT; };
+		14BB4F0B174BD7B100C75F78 /* PLCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLCropViewController.m; path = Lib/PLCropViewController.m; sourceTree = SOURCE_ROOT; };
+		14BB4F0D174BD7CA00C75F78 /* PLCropRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLCropRectView.h; path = Lib/PLCropRectView.h; sourceTree = SOURCE_ROOT; };
+		14BB4F0E174BD7CA00C75F78 /* PLCropRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLCropRectView.m; path = Lib/PLCropRectView.m; sourceTree = SOURCE_ROOT; };
+		14BB4F0F174BD7CB00C75F78 /* PLResizeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLResizeControl.h; path = Lib/PLResizeControl.h; sourceTree = SOURCE_ROOT; };
+		14BB4F10174BD7CB00C75F78 /* PLResizeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLResizeControl.m; path = Lib/PLResizeControl.m; sourceTree = SOURCE_ROOT; };
+		14BB4F13174BDED300C75F78 /* PLPhotoCropEditorBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PLPhotoCropEditorBorder.png; path = Resources/PLPhotoCropEditorBorder.png; sourceTree = SOURCE_ROOT; };
+		14BB4F14174BDED300C75F78 /* PLPhotoCropEditorBorder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PLPhotoCropEditorBorder@2x.png"; path = "Resources/PLPhotoCropEditorBorder@2x.png"; sourceTree = SOURCE_ROOT; };
+		CA9FB5291752731300797B5C /* PLPhotoCropEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PLPhotoCropEditor-Prefix.pch"; path = "DemoApp/PLPhotoCropEditor-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		CA9FB52A1752733400797B5C /* PLPhotoCropEditor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PLPhotoCropEditor-Info.plist"; path = "DemoApp/PLPhotoCropEditor-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		14BB4E7D174BC39000C75F78 = {
 			isa = PBXGroup;
 			children = (
-				14BB4E8F174BC39000C75F78 /* PEPhotoCropEditor */,
+				14BB4E8F174BC39000C75F78 /* PLPhotoCropEditor */,
 				14BB4E88174BC39000C75F78 /* Frameworks */,
 				14BB4E87174BC39000C75F78 /* Products */,
 			);
@@ -89,7 +89,7 @@
 		14BB4E87174BC39000C75F78 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14BB4E86174BC39000C75F78 /* PEPhotoCropEditor.app */,
+				14BB4E86174BC39000C75F78 /* PLPhotoCropEditor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,22 +106,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		14BB4E8F174BC39000C75F78 /* PEPhotoCropEditor */ = {
+		14BB4E8F174BC39000C75F78 /* PLPhotoCropEditor */ = {
 			isa = PBXGroup;
 			children = (
 				14BB4EC5174BC52800C75F78 /* DemoApp */,
 				14BB4EB4174BC45A00C75F78 /* Lib */,
 				14BB4E90174BC39000C75F78 /* Supporting Files */,
 			);
-			path = PEPhotoCropEditor;
+			path = PLPhotoCropEditor;
 			sourceTree = "<group>";
 		};
 		14BB4E90174BC39000C75F78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				14BB4ECF174BC59E00C75F78 /* PEPhotoCropEditor-Info.plist */,
+				CA9FB52A1752733400797B5C /* PLPhotoCropEditor-Info.plist */,
 				14BB4EE5174BD70200C75F78 /* InfoPlist.strings */,
-				14BB4EE4174BD6E600C75F78 /* PEPhotoCropEditor-Prefix.pch */,
+				CA9FB5291752731300797B5C /* PLPhotoCropEditor-Prefix.pch */,
 				14BB4ECD174BC59500C75F78 /* main.m */,
 				14BB4EC7174BC57700C75F78 /* Default.png */,
 				14BB4EC8174BC57700C75F78 /* Default@2x.png */,
@@ -133,8 +133,8 @@
 		14BB4EAF174BC3DD00C75F78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				14BB4F13174BDED300C75F78 /* PEPhotoCropEditorBorder.png */,
-				14BB4F14174BDED300C75F78 /* PEPhotoCropEditorBorder@2x.png */,
+				14BB4F13174BDED300C75F78 /* PLPhotoCropEditorBorder.png */,
+				14BB4F14174BDED300C75F78 /* PLPhotoCropEditorBorder@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -158,20 +158,20 @@
 				14BB4EE8174BD70E00C75F78 /* MainStoryboard_iPad.storyboard */,
 				14BB4EEA174BD70E00C75F78 /* MainStoryboard_iPhone.storyboard */,
 			);
-			name = "DemoApp";
+			name = DemoApp;
 			sourceTree = "<group>";
 		};
 		14BB4F06174BD79000C75F78 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				14BB4F0A174BD7B100C75F78 /* PECropViewController.h */,
-				14BB4F0B174BD7B100C75F78 /* PECropViewController.m */,
-				14BB4F07174BD79E00C75F78 /* PECropView.h */,
-				14BB4F08174BD79E00C75F78 /* PECropView.m */,
-				14BB4F0D174BD7CA00C75F78 /* PECropRectView.h */,
-				14BB4F0E174BD7CA00C75F78 /* PECropRectView.m */,
-				14BB4F0F174BD7CB00C75F78 /* PEResizeControl.h */,
-				14BB4F10174BD7CB00C75F78 /* PEResizeControl.m */,
+				14BB4F0A174BD7B100C75F78 /* PLCropViewController.h */,
+				14BB4F0B174BD7B100C75F78 /* PLCropViewController.m */,
+				14BB4F07174BD79E00C75F78 /* PLCropView.h */,
+				14BB4F08174BD79E00C75F78 /* PLCropView.m */,
+				14BB4F0D174BD7CA00C75F78 /* PLCropRectView.h */,
+				14BB4F0E174BD7CA00C75F78 /* PLCropRectView.m */,
+				14BB4F0F174BD7CB00C75F78 /* PLResizeControl.h */,
+				14BB4F10174BD7CB00C75F78 /* PLResizeControl.m */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -179,9 +179,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14BB4E85174BC39000C75F78 /* PEPhotoCropEditor */ = {
+		14BB4E85174BC39000C75F78 /* PLPhotoCropEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14BB4EAC174BC39000C75F78 /* Build configuration list for PBXNativeTarget "PEPhotoCropEditor" */;
+			buildConfigurationList = 14BB4EAC174BC39000C75F78 /* Build configuration list for PBXNativeTarget "PLPhotoCropEditor" */;
 			buildPhases = (
 				14BB4E82174BC39000C75F78 /* Sources */,
 				14BB4E83174BC39000C75F78 /* Frameworks */,
@@ -191,9 +191,9 @@
 			);
 			dependencies = (
 			);
-			name = PEPhotoCropEditor;
-			productName = PEPhotoCropEditor;
-			productReference = 14BB4E86174BC39000C75F78 /* PEPhotoCropEditor.app */;
+			name = PLPhotoCropEditor;
+			productName = PLPhotoCropEditor;
+			productReference = 14BB4E86174BC39000C75F78 /* PLPhotoCropEditor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "kishikawa katsumi";
 			};
-			buildConfigurationList = 14BB4E81174BC39000C75F78 /* Build configuration list for PBXProject "PEPhotoCropEditor" */;
+			buildConfigurationList = 14BB4E81174BC39000C75F78 /* Build configuration list for PBXProject "PLPhotoCropEditor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -218,7 +218,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14BB4E85174BC39000C75F78 /* PEPhotoCropEditor */,
+				14BB4E85174BC39000C75F78 /* PLPhotoCropEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -234,8 +234,8 @@
 				14BB4EE7174BD70200C75F78 /* InfoPlist.strings in Resources */,
 				14BB4EEC174BD70E00C75F78 /* MainStoryboard_iPad.storyboard in Resources */,
 				14BB4EED174BD70E00C75F78 /* MainStoryboard_iPhone.storyboard in Resources */,
-				14BB4F15174BDED300C75F78 /* PEPhotoCropEditorBorder.png in Resources */,
-				14BB4F16174BDED300C75F78 /* PEPhotoCropEditorBorder@2x.png in Resources */,
+				14BB4F15174BDED300C75F78 /* PLPhotoCropEditorBorder.png in Resources */,
+				14BB4F16174BDED300C75F78 /* PLPhotoCropEditorBorder@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +249,10 @@
 				14BB4ECE174BC59500C75F78 /* main.m in Sources */,
 				14BB4EDE174BC5D300C75F78 /* AppDelegate.m in Sources */,
 				14BB4EDF174BC5D300C75F78 /* ViewController.m in Sources */,
-				14BB4F09174BD79E00C75F78 /* PECropView.m in Sources */,
-				14BB4F0C174BD7B100C75F78 /* PECropViewController.m in Sources */,
-				14BB4F11174BD7CC00C75F78 /* PECropRectView.m in Sources */,
-				14BB4F12174BD7CC00C75F78 /* PEResizeControl.m in Sources */,
+				14BB4F09174BD79E00C75F78 /* PLCropView.m in Sources */,
+				14BB4F0C174BD7B100C75F78 /* PLCropViewController.m in Sources */,
+				14BB4F11174BD7CC00C75F78 /* PLCropRectView.m in Sources */,
+				14BB4F12174BD7CC00C75F78 /* PLResizeControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +349,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoApp/PEPhotoCropEditor-Prefix.pch";
-				INFOPLIST_FILE = "DemoApp/PEPhotoCropEditor-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "DemoApp/PLPhotoCropEditor-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DemoApp/PLPhotoCropEditor-Info.plist";
+				PRODUCT_NAME = PLPhotoCropEditor;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -360,9 +360,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DemoApp/PEPhotoCropEditor-Prefix.pch";
-				INFOPLIST_FILE = "DemoApp/PEPhotoCropEditor-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "DemoApp/PLPhotoCropEditor-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/DemoApp/PLPhotoCropEditor-Info.plist";
+				PRODUCT_NAME = PLPhotoCropEditor;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -370,7 +370,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14BB4E81174BC39000C75F78 /* Build configuration list for PBXProject "PEPhotoCropEditor" */ = {
+		14BB4E81174BC39000C75F78 /* Build configuration list for PBXProject "PLPhotoCropEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14BB4EAA174BC39000C75F78 /* Debug */,
@@ -379,7 +379,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14BB4EAC174BC39000C75F78 /* Build configuration list for PBXNativeTarget "PEPhotoCropEditor" */ = {
+		14BB4EAC174BC39000C75F78 /* Build configuration list for PBXNativeTarget "PLPhotoCropEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14BB4EAD174BC39000C75F78 /* Debug */,

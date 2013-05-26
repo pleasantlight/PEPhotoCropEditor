@@ -1,31 +1,31 @@
 //
-//  PECropRectView.m
+//  PLCropRectView.m
 //  PhotoCropEditor
 //
-//  Created by kishikawa katsumi on 2013/05/21.
-//  Copyright (c) 2013 kishikawa katsumi. All rights reserved.
+//  Created by Noam Etzion-Rosenberg on 2013/05/21.
+//  Copyright (c) 2013 Noam Etzion-Rosenberg. All rights reserved.
 //
 
-#import "PECropRectView.h"
-#import "PEResizeControl.h"
+#import "PLCropRectView.h"
+#import "PLResizeControl.h"
 
-@interface PECropRectView ()
+@interface PLCropRectView ()
 
-@property (nonatomic) PEResizeControl *topLeftCornerView;
-@property (nonatomic) PEResizeControl *topRightCornerView;
-@property (nonatomic) PEResizeControl *bottomLeftCornerView;
-@property (nonatomic) PEResizeControl *bottomRightCornerView;
-@property (nonatomic) PEResizeControl *topEdgeView;
-@property (nonatomic) PEResizeControl *leftEdgeView;
-@property (nonatomic) PEResizeControl *bottomEdgeView;
-@property (nonatomic) PEResizeControl *rightEdgeView;
+@property (nonatomic) PLResizeControl *topLeftCornerView;
+@property (nonatomic) PLResizeControl *topRightCornerView;
+@property (nonatomic) PLResizeControl *bottomLeftCornerView;
+@property (nonatomic) PLResizeControl *bottomRightCornerView;
+@property (nonatomic) PLResizeControl *topEdgeView;
+@property (nonatomic) PLResizeControl *leftEdgeView;
+@property (nonatomic) PLResizeControl *bottomEdgeView;
+@property (nonatomic) PLResizeControl *rightEdgeView;
 
 @property (nonatomic) CGRect initialRect;
 @property (nonatomic, getter = isLiveResizing) BOOL liveResizing;
 
 @end
 
-@implementation PECropRectView
+@implementation PLCropRectView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -36,38 +36,38 @@
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectInset(self.bounds, -2.0f, -2.0f)];
         imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        imageView.image = [[UIImage imageNamed:@"PEPhotoCropEditorBorder"] resizableImageWithCapInsets:UIEdgeInsetsMake(23.0f, 23.0f, 23.0f, 23.0f)];
+        imageView.image = [[UIImage imageNamed:@"PLPhotoCropEditorBorder"] resizableImageWithCapInsets:UIEdgeInsetsMake(23.0f, 23.0f, 23.0f, 23.0f)];
         [self addSubview:imageView];
         
-        self.topLeftCornerView = [[PEResizeControl alloc] init];
+        self.topLeftCornerView = [[PLResizeControl alloc] init];
         self.topLeftCornerView.delegate = self;
         [self addSubview:self.topLeftCornerView];
         
-        self.topRightCornerView = [[PEResizeControl alloc] init];
+        self.topRightCornerView = [[PLResizeControl alloc] init];
         self.topRightCornerView.delegate = self;
         [self addSubview:self.topRightCornerView];
         
-        self.bottomLeftCornerView = [[PEResizeControl alloc] init];
+        self.bottomLeftCornerView = [[PLResizeControl alloc] init];
         self.bottomLeftCornerView.delegate = self;
         [self addSubview:self.bottomLeftCornerView];
         
-        self.bottomRightCornerView = [[PEResizeControl alloc] init];
+        self.bottomRightCornerView = [[PLResizeControl alloc] init];
         self.bottomRightCornerView.delegate = self;
         [self addSubview:self.bottomRightCornerView];
         
-        self.topEdgeView = [[PEResizeControl alloc] init];
+        self.topEdgeView = [[PLResizeControl alloc] init];
         self.topEdgeView.delegate = self;
         [self addSubview:self.topEdgeView];
         
-        self.leftEdgeView = [[PEResizeControl alloc] init];
+        self.leftEdgeView = [[PLResizeControl alloc] init];
         self.leftEdgeView.delegate = self;
         [self addSubview:self.leftEdgeView];
         
-        self.bottomEdgeView = [[PEResizeControl alloc] init];
+        self.bottomEdgeView = [[PLResizeControl alloc] init];
         self.bottomEdgeView.delegate = self;
         [self addSubview:self.bottomEdgeView];
         
-        self.rightEdgeView = [[PEResizeControl alloc] init];
+        self.rightEdgeView = [[PLResizeControl alloc] init];
         self.rightEdgeView.delegate = self;
         [self addSubview:self.rightEdgeView];
     }
@@ -79,7 +79,7 @@
 {
     NSArray *subviews = self.subviews;
     for (UIView *subview in subviews) {
-        if ([subview isKindOfClass:[PEResizeControl class]]) {
+        if ([subview isKindOfClass:[PLResizeControl class]]) {
             if (CGRectContainsPoint(subview.frame, point)) {
                 return subview;
             }
@@ -92,17 +92,17 @@
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
-    
-    CGFloat width = CGRectGetWidth(self.bounds);
-    CGFloat height = CGRectGetHeight(self.bounds);
-    
-    UIColor *lineColor = [UIColor whiteColor];
-    [lineColor set];
-    
-    for (NSInteger i = 1; i < 3; i++) {
-        UIRectFill(CGRectMake(0.0f, roundf(height / 3 * i), roundf(width), 1.0f));
-        UIRectFill(CGRectMake(roundf(width / 3 * i), 0.0f, 1.0f, roundf(height)));
-    }
+//    
+//    CGFloat width = CGRectGetWidth(self.bounds);
+//    CGFloat height = CGRectGetHeight(self.bounds);
+//    
+//    UIColor *lineColor = [UIColor whiteColor];
+//    [lineColor set];
+//    
+//    for (NSInteger i = 1; i < 3; i++) {
+//        UIRectFill(CGRectMake(0.0f, roundf(height / 3 * i), roundf(width), 1.0f));
+//        UIRectFill(CGRectMake(roundf(width / 3 * i), 0.0f, 1.0f, roundf(height)));
+//    }
 }
 
 - (void)layoutSubviews
@@ -119,7 +119,7 @@
     self.rightEdgeView.frame = (CGRect){CGRectGetWidth(self.bounds) - CGRectGetWidth(self.rightEdgeView.bounds) / 2, CGRectGetMaxY(self.topRightCornerView.frame), CGRectGetWidth(self.rightEdgeView.bounds), CGRectGetMinY(self.bottomRightCornerView.frame) - CGRectGetMaxY(self.topRightCornerView.frame)};
 }
 
-- (void)resizeConrolViewDidBeginResizing:(PEResizeControl *)resizeConrolView
+- (void)resizeConrolViewDidBeginResizing:(PLResizeControl *)resizeConrolView
 {
     self.liveResizing = YES;
     self.initialRect = self.frame;
@@ -129,7 +129,7 @@
     }
 }
 
-- (void)resizeConrolViewDidResize:(PEResizeControl *)resizeConrolView
+- (void)resizeConrolViewDidResize:(PLResizeControl *)resizeConrolView
 {
     self.frame = [self cropRectMakeWithResizeControlView:resizeConrolView];
         
@@ -138,7 +138,7 @@
     }
 }
 
-- (void)resizeConrolViewDidEndResizing:(PEResizeControl *)resizeConrolView
+- (void)resizeConrolViewDidEndResizing:(PLResizeControl *)resizeConrolView
 {
     self.liveResizing = NO;
     
@@ -147,7 +147,7 @@
     }
 }
 
-- (CGRect)cropRectMakeWithResizeControlView:(PEResizeControl *)resizeControlView
+- (CGRect)cropRectMakeWithResizeControlView:(PLResizeControl *)resizeControlView
 {
     CGRect rect = self.frame;
     

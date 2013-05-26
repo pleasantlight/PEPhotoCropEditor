@@ -1,25 +1,25 @@
 //
-//  PECropView.m
+//  PLCropView.m
 //  PhotoCropEditor
 //
-//  Created by kishikawa katsumi on 2013/05/19.
-//  Copyright (c) 2013 kishikawa katsumi. All rights reserved.
+//  Created by Noam Etzion-Rosenberg on 2013/05/19.
+//  Copyright (c) 2013 Noam Etzion-Rosenberg. All rights reserved.
 //
 
-#import "PECropView.h"
-#import "PECropRectView.h"
+#import "PLCropView.h"
+#import "PLCropRectView.h"
 
 static const CGFloat MarginTop = 37.0f;
 static const CGFloat MarginBottom = MarginTop;
-static const CGFloat MarginLeft = 20.0f;
+static const CGFloat MarginLeft = 0.0f;
 static const CGFloat MarginRight = MarginLeft;
 
-@interface PECropView () <UIScrollViewDelegate>
+@interface PLCropView () <UIScrollViewDelegate>
 
 @property (nonatomic) UIScrollView *scrollView;
 @property (nonatomic) UIImageView *imageView;
 
-@property (nonatomic) PECropRectView *cropRectView;
+@property (nonatomic) PLCropRectView *cropRectView;
 
 @property (nonatomic) CALayer *overlayLayer;
 @property (nonatomic) CAShapeLayer *cropLayer;
@@ -33,7 +33,7 @@ static const CGFloat MarginRight = MarginLeft;
 
 @end
 
-@implementation PECropView
+@implementation PLCropView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -54,7 +54,7 @@ static const CGFloat MarginRight = MarginLeft;
         self.scrollView.clipsToBounds = NO;
         [self addSubview:self.scrollView];
         
-        self.cropRectView = [[PECropRectView alloc] init];
+        self.cropRectView = [[PLCropRectView alloc] init];
         self.cropRectView.delegate = self;
         [self addSubview:self.cropRectView];
         
@@ -62,7 +62,7 @@ static const CGFloat MarginRight = MarginLeft;
         self.overlayLayer.bounds = self.layer.bounds;
         self.overlayLayer.position = self.layer.position;
         self.overlayLayer.backgroundColor = [[UIColor blackColor] CGColor];
-        self.overlayLayer.opacity = 0.4f;
+        self.overlayLayer.opacity = 0.7f;
         [self.layer addSublayer:self.overlayLayer];
         
         self.cropLayer = [CAShapeLayer layer];
@@ -110,7 +110,7 @@ static const CGFloat MarginRight = MarginLeft;
             self.insetRect = CGRectInset(self.bounds, MarginLeft, MarginLeft);
         }
         
-        self.cropRect = AVMakeRectWithAspectRatioInsideRect(self.image.size, self.insetRect);
+        self.cropRect = AVMakeRectWithAspectRatioInsideRect(CGSizeMake(320, 150), self.insetRect);
         
         self.scrollView.frame = self.cropRect;
         self.scrollView.contentSize = self.cropRect.size;
@@ -214,7 +214,7 @@ static const CGFloat MarginRight = MarginLeft;
     return cropRect;
 }
 
-- (CGRect)cappedCropRectInImageRectWithCropRectView:(PECropRectView *)cropRectView
+- (CGRect)cappedCropRectInImageRectWithCropRectView:(PLCropRectView *)cropRectView
 {
     CGRect cropRect = cropRectView.frame;
     
@@ -256,12 +256,12 @@ static const CGFloat MarginRight = MarginLeft;
 
 #pragma mark -
 
-- (void)cropRectViewDidBeginEditing:(PECropRectView *)cropRectView
+- (void)cropRectViewDidBeginEditing:(PLCropRectView *)cropRectView
 {
     self.resizing = YES;
 }
 
-- (void)cropRectViewEditingChanged:(PECropRectView *)cropRectView
+- (void)cropRectViewEditingChanged:(PLCropRectView *)cropRectView
 {
     CGRect cropRect = [self cappedCropRectInImageRectWithCropRectView:cropRectView];
     
@@ -271,7 +271,7 @@ static const CGFloat MarginRight = MarginLeft;
     [self automaticZoomIfEdgeTouched:cropRect];
 }
 
-- (void)cropRectViewDidEndEditing:(PECropRectView *)cropRectView
+- (void)cropRectViewDidEndEditing:(PLCropRectView *)cropRectView
 {
     self.resizing = NO;
     [self zoomToCropRect:self.cropRectView.frame];

@@ -1,9 +1,9 @@
-PEPhotoCropEditor
+PLPhotoCropEditor
 =================
 
-PEPhotoCropEditor is image cropping library for iOS, similar to the Photos.app UI.
+PLPhotoCropEditor is image cropping library for iOS, similar to the Photos.app UI.
 
-<img src="https://raw.github.com/kishikawakatsumi/PEPhotoCropEditor/master/Screenshots/ss01.png" alt="ScreenShot 1" width="280px" style="width: 280px;" />&nbsp;<a href="https://vimeo.com/66661806"><img src="https://raw.github.com/kishikawakatsumi/PEPhotoCropEditor/master/Screenshots/ss02.png" alt="[Movie 1" width="440px" style="width: 440px;" /></a>
+<img src="https://raw.github.com/pleasantlight/PLPhotoCropEditor/master/Screenshots/ss01.png" alt="ScreenShot 1" width="280px" style="width: 280px;" />&nbsp;<a href="https://vimeo.com/66661806"><img src="https://raw.github.com/pleasantlight/PLPhotoCropEditor/master/Screenshots/ss02.png" alt="[Movie 1" width="440px" style="width: 440px;" /></a>
 
 ## License
 MIT License
@@ -14,13 +14,13 @@ MIT License
 
 ## Installation
 ### CocoaPods
-`pod 'PEPhotoCropEditor'`
+`pod 'PLPhotoCropEditor'`
 
 ## Usage
 
 **Use view controller component**
 ```objective-c
- PECropViewController *controller = [[PECropViewController alloc] init];
+ PLCropViewController *controller = [[PLCropViewController alloc] init];
  controller.delegate = self;
  controller.image = self.imageView.image;
  
@@ -30,7 +30,7 @@ MIT License
 
 **Or use the crop view directly**
 ```objective-c
-self.cropView = [[PECropView alloc] initWithFrame:contentView.bounds];
+self.cropView = [[PLCropView alloc] initWithFrame:contentView.bounds];
 [self.view addSubview:self.cropView];
 ```
 
@@ -38,7 +38,7 @@ self.cropView = [[PECropView alloc] initWithFrame:contentView.bounds];
 
 **delegate method**
 ```objective-c
-- (void)cropViewController:(PECropViewController *)controller didFinishCroppingImage:(UIImage *)croppedImage
+- (void)cropViewController:(PLCropViewController *)controller didFinishCroppingImage:(UIImage *)croppedImage
 {
     [controller dismissViewControllerAnimated:YES completion:NULL];
     self.imageView.image = croppedImage;

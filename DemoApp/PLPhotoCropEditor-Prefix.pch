@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'PEPhotoCropEditor' target in the 'PEPhotoCropEditor' project
+// Prefix header for all source files of the 'PLPhotoCropEditor' target in the 'PLPhotoCropEditor' project
 //
 
 #import <Availability.h>
